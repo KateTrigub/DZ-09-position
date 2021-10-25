@@ -1,0 +1,92 @@
+p {
+    display: none;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.link {
+    text-decoration: none;
+    background-color:gray;
+    color: rgb(226, 225, 225);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+}
+
+.link:hover {
+    background-color:rgb(0, 140, 255);
+}
+
+.sub-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: max-content;
+}
+
+.sub-link {
+    text-decoration: none;
+    background-color:rgb(0, 140, 255);
+    color: rgb(226, 225, 225);
+    padding: 10px 20px;
+    display: block;
+}
+
+.sub-link:hover {
+    background-color:rgb(71, 170, 250);
+}
+
+.list-item:hover .sub-list {
+    display: block;
+}
+
+.list-item:hover .link {
+    background-color: rgb(0, 140, 255);
+}
+
+
+
+.sub-sub-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    display: none;
+    width: max-content;
+}
+
+.sub-sub-link {
+    text-decoration: none;
+    background-color:rgb(0, 140, 255);
+    color: rgb(226, 225, 225);
+    padding: 10px 20px;
+    display: block;
+}
+
+.sub-sub-link:hover {
+    background-color:rgb(71, 170, 250);
+}
+
+.sub-item:hover .sub-sub-list {
+    display: block;
+}
+
+.sub-item:hover .sub-link {
+    background-color: rgb(71, 170, 250);
+}
